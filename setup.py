@@ -2,8 +2,10 @@ import os
 from setuptools import setup
 
 setup(
-  name = 'arcface',
+  name = 'ArcFace',
   version = '0.0.8',
   install_requires=['tensorflow','gdown'],
-  packages = ['arcface']
+  packages = ['ArcFace'],
+  setup_requires=['setuptools_scm'],
+  include_package_data=True,
 )
